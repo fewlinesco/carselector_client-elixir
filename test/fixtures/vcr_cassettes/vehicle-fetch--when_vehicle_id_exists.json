@@ -1,0 +1,35 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "Authorization": "***",
+        "CarSelector-Version": "20160719",
+        "Content-Type": "application/vnd.api+json"
+      },
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "https://carselector.groomgroom.co/api/vehicles/d2dec69f-327d-45e6-b460-332370da9237"
+    },
+    "response": {
+      "body": "{\"jsonapi\":{\"version\":\"1.0\"},\"included\":[{\"type\":\"model\",\"links\":{\"self\":\"/api/models/9ccf141f-7a14-4a7b-bc04-7b37039bd7dd\"},\"id\":\"9ccf141f-7a14-4a7b-bc04-7b37039bd7dd\",\"attributes\":{\"updated-at\":\"2016-07-12T15:16:39\",\"tecdoc-id\":\"4928\",\"name\":\"7\",\"inserted-at\":\"2016-07-12T15:16:39\"}},{\"type\":\"brand\",\"links\":{\"self\":\"/api/brands/aa82f8ea-0362-441d-941f-e73081776a6f\"},\"id\":\"aa82f8ea-0362-441d-941f-e73081776a6f\",\"attributes\":{\"updated-at\":\"2016-07-12T15:16:36\",\"tecdoc-id\":\"1296\",\"name\":\"BMW\",\"inserted-at\":\"2016-07-12T15:16:36\"}},{\"type\":\"engine\",\"links\":{\"self\":\"/api/engines/c97e1efc-7350-4056-bcc4-9c0fb43d3b2c\"},\"id\":\"c97e1efc-7350-4056-bcc4-9c0fb43d3b2c\",\"attributes\":{\"updated-at\":\"2016-07-12T15:17:09\",\"tecdoc-id\":\"4183\",\"name\":\"725 tds\",\"inserted-at\":\"2016-07-12T15:17:09\"}}],\"data\":{\"type\":\"vehicle\",\"relationships\":{\"model\":{\"data\":{\"type\":\"model\",\"id\":\"9ccf141f-7a14-4a7b-bc04-7b37039bd7dd\"}},\"engine\":{\"data\":{\"type\":\"engine\",\"id\":\"c97e1efc-7350-4056-bcc4-9c0fb43d3b2c\"}},\"brand\":{\"data\":{\"type\":\"brand\",\"id\":\"aa82f8ea-0362-441d-941f-e73081776a6f\"}}},\"links\":{\"self\":\"/api/vehicles/d2dec69f-327d-45e6-b460-332370da9237\"},\"id\":\"d2dec69f-327d-45e6-b460-332370da9237\",\"attributes\":{\"updated-at\":\"2016-07-12T15:19:05\",\"tecdoc-id\":\"31477\",\"inserted-at\":\"2016-07-12T15:19:05\"}}}",
+      "headers": {
+        "Connection": "keep-alive",
+        "Server": "Cowboy",
+        "Date": "Wed, 17 Aug 2016 17:22:08 GMT",
+        "Content-Length": "1287",
+        "Content-Type": "application/vnd.api+json; charset=utf-8",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "Strict-Transport-Security": "max-age=31536000",
+        "X-Request-Id": "00c79836-95c6-44b5-be4f-80907fb63119",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Expose-Headers": "",
+        "Access-Control-Allow-Credentials": "true",
+        "Via": "1.1 vegur"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]
