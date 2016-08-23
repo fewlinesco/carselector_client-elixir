@@ -11,11 +11,11 @@ defmodule CarSelector.Adapters.API.Utils do
   end
 
   defp api_version do
-    Application.get_env(:carselector, :version, 20160719)
+    CarSelector.version
   end
 
   defp base_url do
-    Application.get_env(:carselector, :url, "https://carselector.groomgroom.co/api")
+    CarSelector.url
   end
 
   defp handle_data(errors = %{"errors" => _errors}) do
@@ -35,12 +35,7 @@ defmodule CarSelector.Adapters.API.Utils do
   end
 
   defp private_api_key do
-    case Application.get_env(:carselector, :private_api_key) do
-      {:system, value} ->
-        System.get_env(value)
-      value ->
-        value
-    end
+    CarSelector.private_api_key
   end
 
   defp parse_result(data) when is_map(data) do
