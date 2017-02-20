@@ -14,7 +14,7 @@ defmodule CarSelector.Mixfile do
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
      docs: [main: "README", extras: ["README.md"]],
-     package: package,
+     package: package(),
      deps: deps()]
   end
 

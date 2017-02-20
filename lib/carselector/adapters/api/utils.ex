@@ -1,13 +1,13 @@
 defmodule CarSelector.Adapters.API.Utils do
   def get_json(url) do
-    with {:ok, %HTTPoison.Response{body: body}} <- HTTPoison.get(url, headers),
+    with {:ok, %HTTPoison.Response{body: body}} <- HTTPoison.get(url, headers()),
          {:ok, json} <- Poison.decode(body),
          {:ok, data} <- handle_data(json),
     do: {:ok, data}
   end
 
   def url(path) do
-    base_url <> path
+    base_url() <> path
   end
 
   defp api_version do
@@ -29,9 +29,9 @@ defmodule CarSelector.Adapters.API.Utils do
   end
 
   defp headers do
-    %{"Authorization" => "Token=#{private_api_key}",
+    %{"Authorization" => "Token=#{private_api_key()}",
       "Content-Type" => "application/vnd.api+json",
-      "CarSelector-Version" => api_version}
+      "CarSelector-Version" => api_version()}
   end
 
   defp private_api_key do
