@@ -10,7 +10,7 @@ The package can be installed as:
 
   ```elixir
   def deps do
-    [{:carselector, "~> 0.1.0"}]
+    [{:carselector, "~> 0.1.1"}]
   end
   ```
 2. Setup your configuration:
