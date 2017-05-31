@@ -25,8 +25,8 @@ defmodule CarSelector.Mixfile do
   defp deps do
     [
       {:dogma, "~> 0.1.7", only: [:dev, :test]},
-      {:httpoison, "~> 0.9.0"},
-      {:poison, "~> 2.2.0"},
+      {:httpoison, "~> 0.11.2"},
+      {:poison, "~> 3.1.0"},
       {:exvcr, "~> 0.7", only: :test}
     ]
   end
